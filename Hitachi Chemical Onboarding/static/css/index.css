@@ -1,0 +1,23 @@
+.nav-item {
+    margin-left: 25px;
+}
+
+.header {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin-right: 50px;
+
+}
+
+    .header h2 {
+        font-size: 300%;
+    }
+
+    .header h3 {
+        font-size: 275%;
+    }
+
+.logo {
+    max-width: 375px;
+}

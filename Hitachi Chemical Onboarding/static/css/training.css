@@ -1,0 +1,15 @@
+/* * {
+    outline: 1px solid pink;
+} */
+
+
+.nav-item {
+    margin-left: 25px;
+}
+
+.information {
+    margin-top: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    width: 50%;
+}

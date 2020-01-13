@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Index Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/static/img/images/Hitachi Symbol.gif" width="150" height="30" alt="">
+        </a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/benefits">Benefits</a>
+                <a class="nav-item nav-link" href="/expats">Expats</a>
+                <a class="nav-item nav-link" href="/recruiting">Recruiting</a>
+                <a class="nav-item nav-link" href="/training">Training</a>
+                <a class="nav-item nav-link" href="/programs">Programs</a>
+                <a class="nav-item nav-link" href="/policies">Policies</a>
+                <a class="nav-item nav-link" href="/information">Information</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h2>Human Resources Portal</h2>
+            <h3>North America Region</h3>
+        </div>
+        <img class="logo" src="static/img/images/HRLogo.png">
+    </div>
+    
+</body>
+</html>
+
+<!-- <?php
+$localhost = "localhost"; #localhost
+$dbusername = "root"; #username of phpmyadmin
+$dbpassword = "root";  #password of phpmyadmin
+$dbname = "hitachi_docs";  #database name
+  
+#connection string
+$conn = mysqli_connect($localhost,$dbusername,$dbpassword,$dbname);
+  
+if (isset($_POST["submit"]))
+ {
+     #retrieve file title
+        $title = $_POST["title"];
+      
+    #file name with a random number so that similar dont get replaced
+     $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
+  
+    #temporary file name to store file
+    $tname = $_FILES["file"]["tmp_name"];
+    
+     #upload directory path
+$uploads_dir = 'images';
+    #TO move the uploaded file to specific location
+    move_uploaded_file($tname, $uploads_dir.'/'.$pname);
+  
+    #sql query to insert into database
+    $sql = "INSERT into fileup(title,image) VALUES('$title','$pname')";
+  
+    if(mysqli_query($conn,$sql)){
+  
+    echo "File Sucessfully uploaded";
+    }
+    else{
+        echo "Error";
+    }
+}
+  ?>
+   -->

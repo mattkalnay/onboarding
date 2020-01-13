@@ -1,0 +1,61 @@
+.nav-item {
+    margin-left: 25px;
+}
+
+
+.information {
+    margin-top: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    width: 50%;
+}
+
+    .information .header{
+        margin-bottom: 10px;
+
+    }
+
+    .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+    .add{
+        margin-top: -20px;
+    }
+
+
+    .information .subheader{
+        margin-bottom: 15px;
+        vertical-align: top;
+    }
+
+        .subheader .medical {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+   
+            .subheader h3{
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .medical form{
+                display: inline-block; 
+            }
+
+            .materials li {
+                margin-bottom: 5px;
+            }
+            .materials .listitem {
+                margin-right: 8px;
+            }
+
+
+
+
+
